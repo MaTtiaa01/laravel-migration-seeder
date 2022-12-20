@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use Faker\Generator as Faker;
 use App\Models\Train;
+use Faker\Generator as Faker;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -24,7 +24,7 @@ class TrainSeeder extends Seeder
             $train->departure_time = $faker->time();
             $train->arrival_time = $faker->time();
             $train->train_code = $faker->ean8();
-            $train->wagon = $faker->bothify('#??');
+            $train->wagon = $faker->bothify('?# ');
             $train->on_time = $faker->randomElement(['true', 'false']);
             $train->cancelled = $faker->randomElement(['true', 'false']);
             $train->save();
