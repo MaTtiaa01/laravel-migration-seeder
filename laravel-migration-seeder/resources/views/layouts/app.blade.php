@@ -16,25 +16,16 @@
 </head>
 
 <body>
-    <header>
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link" href="{{route('home')}}">home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{route('train')}}">train</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{route('about')}}">about</a>
-            </li>
-        </ul>
-    </header>
+    @include('partials.header')
+    <!-- ./header -->
 
     <main>
         @yield('content')
     </main>
+    <!-- ./main -->
 
-    <footer></footer>
+    @include('partials.footer')
+    <!-- ./footer -->
 </body>
 
 </html>
