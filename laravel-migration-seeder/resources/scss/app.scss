@@ -1,1 +1,17 @@
 @import '~bootstrap/scss/bootstrap';
+
+
+
+header {
+    ul {
+        li {
+            a.nav-link {
+                color: bisque;
+            }
+
+            a.nav-link.active {
+                color: cadetblue;
+            }
+        }
+    }
+}

@@ -1,5 +1,5 @@
-<header class="bg-dark ">
-    <ul class="nav justify-content-center">
+<header class="bg-dark py-4">
+    <ul class="nav justify-content-center ">
         <li class="nav-item">
             <a class=" nav-link text-uppercase {{Route::currentRouteName() == 'home' ? 'active' : ''}}" href="{{route('home')}}">home</a>
         </li>
